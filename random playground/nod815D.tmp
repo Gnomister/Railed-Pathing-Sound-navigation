@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://8cxow6egfhc7"]
+
+[ext_resource type="Texture2D" uid="uid://d3bdukhfuikmr" path="res://icon.svg" id="1_m585t"]
+
+[sub_resource type="GDScript" id="GDScript_cgsxy"]
+script/source = "extends Sprite2D
+
+func _run():
+	print(\"test\")
+"
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(566.5, 390.5)
+scale = Vector2(2.07031, 0.992188)
+texture = ExtResource("1_m585t")
+script = SubResource("GDScript_cgsxy")
